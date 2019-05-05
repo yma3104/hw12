@@ -39,11 +39,11 @@ function preload() {
 function setup() {
   createCanvas(400, 400);
   fill(255);
+  
   var score = 0;
-score++;
-textSize(24);
-text("Score: " + score, 10, 25);
-
+  score++;
+  textSize(24);
+  text("Score: " + score, 10, 25);
 }
 
 
@@ -65,22 +65,17 @@ function draw() {
     text("GAME OVER", width / 2, height * 0.7);
   }
   
-//  if (word == "cat") {
-//    text("It's a cat!", 100, 100);
-//    word = "";
-//  }
-  
- 
+
   text("/ˈhænd/", 200, 130);
    if (word == "hand") {
-   word = "";
    text("✔", 200, 200);
+   word = word + "✔";
  }
   
-//    text("/ˌek.spekˈteɪ.ʃən/", 200, 130);
+   text("/ˌek.spekˈteɪ.ʃən/", 200, 130);
    if (word == "expectation") {
-   word = "";
    text("✔", 200, 200);
+   word = word + "✔";
  }
 }
 

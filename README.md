@@ -7,16 +7,16 @@ Phonetics will be shown on the screen.
 Then player will have a limited time to spell the words.
 
 ## Component Parts
-
+Timer will count down.
 When player hit the keybard, the sound will play.  
 
 
 ## Timeline
 
 - Week 0: Write Proposal
-- Week 1: Try to write some basic code. Find soundtrack.
-- Week 2: Have some trouble on the code. Remade a new one.
-- Week 3: 
+- Week 1: Trying to write some basic code. Find soundtrack.
+- Week 2: Having some trouble on the code. Remade a new one.
+- Week 3: compliting it.
 - Week 4: Present!
 
 ## Challenges
@@ -274,5 +274,4 @@ function keyPressed() {
 }
 ```
 ## References and links
-
-Tutorials, comments, videos, magazine articles - anything you found that helps you understand your project.
+https://editor.p5js.org/marynotari/sketches/S1T2ZTMp-

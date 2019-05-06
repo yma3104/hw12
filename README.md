@@ -55,6 +55,8 @@ var soundW;
 var soundX;
 var soundY;
 var soundZ;
+var soundCorrect;
+var soundBack;
 
 // keep track of what the user typed
 var word = "";
@@ -87,11 +89,14 @@ function preload() {
   soundX = loadSound('sounds/X.mp3');
   soundY = loadSound('sounds/Y.mp3');
   soundZ = loadSound('sounds/Z.mp3');
+  Correct = loadSound('sounds/Correct.mp3');
+  Back = loadSound('sounds/Back.mp3');
 }
 
 function setup() {
   createCanvas(400, 400);
   fill(255);
+  Back.play();
   
   var score = 0;
   score++;
@@ -122,12 +127,14 @@ function draw() {
   text("/ˈhænd/", 200, 130);
    if (word == "hand") {
    text("✔", 200, 200);
+   Correct.play();
    word = word + "✔";
  }
   
    text("/ˌek.spekˈteɪ.ʃən/", 200, 130);
    if (word == "expectation") {
    text("✔", 200, 200);
+   soundCorrect.play()
    word = word + "✔";
  }
 }

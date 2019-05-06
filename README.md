@@ -14,8 +14,8 @@ When player hit the keybard, the sound will play.
 ## Timeline
 
 - Week 0: Write Proposal
-- Week 1: Try to write some basic code for my plan A. 
-- Week 2: 
+- Week 1: Try to write some basic code. Find soundtrack.
+- Week 2: Have some trouble on the code. Remade a new one.
 - Week 3: 
 - Week 4: Present!
 

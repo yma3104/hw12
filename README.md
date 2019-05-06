@@ -1,4 +1,33 @@
-# https://editor.p5js.org/yma/sketches/zQFIu8o5E
+# Spelling Game
+spelling words in limited time.
+
+## Summary
+
+Phonetics will be shown on the screen. 
+Then player will have a limited time to spell the words.
+
+## Component Parts
+
+When player hit the keybard, the sound will play.  
+
+
+## Timeline
+
+- Week 0: Write Proposal
+- Week 1: Try to write some basic code for my plan A. 
+- Week 2: 
+- Week 3: 
+- Week 4: Present!
+
+## Challenges
+It is so important to know the basic knowledge properly. Because every single letter and punctuation in a code plays very important roll. 
+When I put one letter wrong then that won't work. When I was trying to creat my own code, I met a lot of trouble on those basic knowledge which I should still need to work on.
+
+## Completed Work
+
+```
+https://editor.p5js.org/yma/sketches/zQFIu8o5E
+
 //sounds
 var soundA;
 var soundB;
@@ -33,7 +62,31 @@ var word = "";
 function preload() {
   soundFormats('mp3');
   soundA = loadSound('sounds/A.mp3');
-  // soundB = loadSound('sounds/B.mp3');
+  soundB = loadSound('sounds/B.mp3');
+  soundC = loadSound('sounds/C.mp3');
+  soundD = loadSound('sounds/D.mp3');
+  soundE = loadSound('sounds/E.mp3');
+  soundF = loadSound('sounds/F.mp3');
+  soundG = loadSound('sounds/G.mp3');
+  soundH = loadSound('sounds/H.mp3');
+  soundI = loadSound('sounds/I.mp3');
+  soundJ = loadSound('sounds/J.mp3');
+  soundK = loadSound('sounds/K.mp3');
+  soundL = loadSound('sounds/L.mp3');
+  soundM = loadSound('sounds/M.mp3');
+  soundN = loadSound('sounds/N.mp3');
+  soundO = loadSound('sounds/O.mp3');
+  soundP = loadSound('sounds/P.mp3');
+  soundQ = loadSound('sounds/Q.mp3');
+  soundR = loadSound('sounds/R.mp3');
+  soundS = loadSound('sounds/S.mp3');
+  soundT = loadSound('sounds/T.mp3');
+  soundU = loadSound('sounds/U.mp3');
+  soundV = loadSound('sounds/V.mp3');
+  soundW = loadSound('sounds/W.mp3');
+  soundX = loadSound('sounds/X.mp3');
+  soundY = loadSound('sounds/Y.mp3');
+  soundZ = loadSound('sounds/Z.mp3');
 }
 
 function setup() {
@@ -219,3 +272,7 @@ function keyPressed() {
     word = word + "z"
   }
 }
+```
+## References and links
+
+Tutorials, comments, videos, magazine articles - anything you found that helps you understand your project.

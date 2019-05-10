@@ -89,7 +89,7 @@ function preload() {
   soundX = loadSound('sounds/X.mp3');
   soundY = loadSound('sounds/Y.mp3');
   soundZ = loadSound('sounds/Z.mp3');
-  Correct = loadSound('sounds/Correct.mp3');
+  Correct = loadSound('sounds/correct.mp3');
   Back = loadSound('sounds/Back.mp3');
 }
 
@@ -97,7 +97,7 @@ function setup() {
   createCanvas(400, 400);
   fill(255);
   Back.play();
-  
+
   var score = 0;
   score++;
   textSize(24);
@@ -108,6 +108,9 @@ function setup() {
 //timer
 
 let timer = 50
+
+
+let wordNumber = 1
 
 function draw() {
   background(100, 30);
@@ -122,37 +125,166 @@ function draw() {
   if (timer == 0) {
     text("GAME OVER", width / 2, height * 0.7);
   }
+
+  if (wordNumber == 1) {
+    text("/ˈhænd/", 200, 130);
+    if (word == "hand") {
+      print("Correct")
+      text("✔", 200, 200);
+      Correct.play();
+      word = ""
+      wordNumber += 1
+    }
+  }
+
+  if (wordNumber == 2) {
+    text("/ˌek.spekˈteɪ.ʃən/", 200, 130);
+    if (word == "expectation") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+  if (wordNumber == 3) {
+    text("/ˌriːˈtell/", 200, 130);
+    if (word == "retell") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+
+  if (wordNumber == 4) {
+    text("/ˈsɪs.təm/", 200, 130);
+    if (word == "system") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 5) {
+    text("/ˈlɪt.l ̩/", 200, 130);
+    if (word == "little") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 6) {
+    text("/ˌɪn.fluˈen.zə/", 200, 130);
+    if (word == "influenza") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 7) {
+    text("/ˈbʌt ̬.ɚ/", 200, 130);
+    if (word == "butter") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 8) {
+    text("/ˈkwæs.ɒ̃/", 200, 130);
+    if (word == "croissant") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 9) {
+    text("/fəˈnɛtɪk/", 200, 130);
+    if (word == "phonetic") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 10) {
+    text("/ˈkɒntrækt/", 200, 130);
+    if (word == "contract") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 11) {
+    text("/ˈpri:viəs/", 200, 130);
+    if (word == "previous") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 12) {
+    text("/ˈrɪtən/", 200, 130);
+    if (word == "written") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 13) {
+    text("/bɪˈkʌm/", 200, 130);
+    if (word == "become") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+  
+    if (wordNumber == 14) {
+    text("/ˈmʌðəʳ/", 200, 130);
+    if (word == "mother") {
+      text("✔", 200, 200);
+      Correct.play()
+      word = ""
+      wordNumber += 1
+    }
+  }
+}  
   
 
-  text("/ˈhænd/", 200, 130);
-   if (word == "hand") {
-   text("✔", 200, 200);
-   Correct.play();
-   word = word + "✔";
- }
   
-   text("/ˌek.spekˈteɪ.ʃən/", 200, 130);
-   if (word == "expectation") {
-   text("✔", 200, 200);
-   soundCorrect.play()
-   word = word + "✔";
- }
-}
-
-
 //type
 function keyPressed() {
   textSize(150);
   noStroke();
-  if (timer == 0){
-     textSize = 0;
+  if (timer == 0) {
+    textSize = 0;
   }
-    if (key == 'a') {
+  if (key == 'a') {
     print("Hit 'a'");
     soundA.play();
     text('A', 200, 230);
     word = word + "a";
   }
+  
+  
   if (key == 'b') {
     text('B', 200, 230);
     soundB.play();
@@ -168,117 +300,120 @@ function keyPressed() {
     soundD.play();
     word = word + "d"
   }
-    if (key == 'e') {
+  if (key == 'e') {
     text('E', 200, 230);
     soundD.play();
     word = word + "e"
   }
-    if (key == 'f') {
+  if (key == 'f') {
     text('D', 200, 230);
     soundD.play();
     word = word + "f"
   }
-    if (key == 'g') {
+  if (key == 'g') {
     text('G', 200, 230);
     soundG.play();
     word = word + "g"
-  }  
-    if (key == 'h') {
+  }
+  if (key == 'h') {
     text('H', 200, 230);
     soundH.play();
     word = word + "h"
   }
-    if (key == 'i') {
+  if (key == 'i') {
     text('I', 200, 230);
     soundI.play();
     word = word + "i"
   }
-    if (key == 'j') {
+  if (key == 'j') {
     text('J', 200, 230);
     soundJ.play();
     word = word + "j"
   }
-    if (key == 'k') {
+  if (key == 'k') {
     text('K', 200, 230);
     soundK.play();
     word = word + "k"
   }
-    if (key == 'l') {
+  if (key == 'l') {
     text('L', 200, 230);
     soundL.play();
     word = word + "l"
   }
-    if (key == 'm') {
+  if (key == 'm') {
     text('M', 200, 230);
     soundM.play();
     word = word + "m"
   }
-    if (key == 'n') {
+  if (key == 'n') {
     text('N', 200, 230);
     soundN.play();
     word = word + "n"
   }
-    if (key == 'o') {
+  if (key == 'o') {
     text('O', 200, 230);
     soundO.play();
     word = word + "o"
   }
-    if (key == 'p') {
+  if (key == 'p') {
     text('P', 200, 230);
     soundP.play();
     word = word + "p"
   }
-    if (key == 'q') {
+  if (key == 'q') {
     text('Q', 200, 230);
     soundQ.play();
     word = word + "q"
   }
-    if (key == 'r') {
+  if (key == 'r') {
     text('R', 200, 230);
     soundR.play();
     word = word + "r"
   }
-    if (key == 's') {
+  if (key == 's') {
     text('S', 200, 230);
     soundS.play();
     word = word + "s"
   }
   if (key == 't') {
     text('T', 200, 230);
-    soundt.Pplay();
+    soundT.play();
     word = word + "t"
   }
-    if (key == 'u') {
+  if (key == 'u') {
     text('U', 200, 230);
     soundU.play();
     word = word + "u"
   }
-    if (key == 'v') {
+  if (key == 'v') {
     text('V', 200, 230);
     soundV.play();
     word = word + "v"
   }
-    if (key == 'w') {
+  if (key == 'w') {
     text('W', 200, 230);
     soundW.play();
     word = word + "w"
   }
-    if (key == 'x') {
+  if (key == 'x') {
     text('X', 200, 230);
     soundX.play();
     word = word + "x"
   }
-    if (key == 'y') {
+  if (key == 'y') {
     text('Y', 200, 230);
     soundY.play();
     word = word + "y"
   }
-    if (key == '  z') {
+  if (key == '  z') {
     text('Z', 200, 230);
     soundZ.play();
     word = word + "z"
   }
+
+  print("Word is " + word)
 }
+
 ```
 ## References and links
 https://editor.p5js.org/marynotari/sketches/S1T2ZTMp-
